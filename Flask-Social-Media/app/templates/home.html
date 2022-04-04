@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}
+AllOpinions Home Page
+{% endblock %}
+
+{% block content %}
+<h1 class="display-1">This is Marcelka page!</h1>
+<div class="container" style="background-color: white; opacity: 0.2; border-border: 1px solid white; border-radius: 25px; width: 1000px">
+    <h1 style="color: black">Posts</h1>
+    {% for post in posts %}
+        <div>
+            <p style="position: absolute; left: 0; top: 0;">{{post.sender}}</p>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
